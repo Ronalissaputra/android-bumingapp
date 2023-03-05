@@ -1,21 +1,8 @@
-import {StyleSheet, Text, View} from 'react-native';
 import React from 'react';
+import Wellcome from './src/pages/Wellcome';
 
 const App = () => {
-  return (
-    <View style={styles.container}>
-      <Text style={styles.text}>App</Text>
-    </View>
-  );
+  return <Wellcome />;
 };
 
 export default App;
-
-const styles = StyleSheet.create({
-  container: {
-    width: 'auto',
-  },
-  text: {
-    fontSize: 40,
-  },
-});
