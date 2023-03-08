@@ -1,8 +1,8 @@
 import React from 'react';
-import Wellcome from './src/pages/Wellcome';
+import Routes from './src/config/Routes';
 
 const App = () => {
-  return <Wellcome />;
+  return <Routes />;
 };
 
 export default App;
