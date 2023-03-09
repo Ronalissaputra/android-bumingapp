@@ -7,10 +7,10 @@ import {
   KonselingScreen,
   ProfileScreen,
   ArticleScreen,
-} from '../screens';
+} from '../../screens';
 import {StatusBar} from 'react-native';
 
-const Routes = () => {
+const UserRoutes = () => {
   const Tab = createBottomTabNavigator();
   return (
     <>
@@ -20,41 +20,41 @@ const Routes = () => {
           screenOptions={({route}) => ({
             headerShown: false,
             tabBarShowLabel: true,
-            tabBarLabelStyle: {fontSize: 14},
+            tabBarLabelStyle: {fontSize: 12},
             tabBarStyle: {
-              backgroundColor: 'green',
-              height: 55,
-              padding: 5,
+              backgroundColor: 'white',
+              height: 43,
+              padding: 0,
             },
-            tabBarInactiveTintColor: '#ffff',
-            tabBarActiveTintColor: 'orange',
+            tabBarInactiveTintColor: 'black',
+            tabBarActiveTintColor: 'blue',
             // eslint-disable-next-line react/no-unstable-nested-components
             tabBarIcon: ({focused, size, color}) => {
               let iconName;
-              if (route.name === 'home') {
+              if (route.name === 'Home') {
                 iconName = focused ? 'ios-home' : 'ios-home-outline';
-                size = focused ? size + 5 : size + 3;
-              } else if (route.name === 'konseling') {
+                size = focused ? size + 2 : size + 1;
+              } else if (route.name === 'Konseling') {
                 iconName = focused ? 'calendar' : 'calendar-outline';
-                size = focused ? size + 5 : size + 3;
-              } else if (route.name === 'article') {
-                iconName = focused ? 'book' : 'book-outline';
-                size = focused ? size + 5 : size + 3;
-              } else if (route.name === 'profil') {
+                size = focused ? size + 2 : size + 1;
+              } else if (route.name === 'Article') {
+                iconName = focused ? 'newspaper-sharp' : 'newspaper-outline';
+                size = focused ? size + 2 : size + 1;
+              } else if (route.name === 'Profil') {
                 iconName = focused ? 'person-circle' : 'person-circle-outline';
-                size = focused ? size + 5 : size + 3;
+                size = focused ? size + 2 : size + 1;
               }
               return <IonIcon name={iconName} size={size} color={color} />;
             },
           })}>
-          <Tab.Screen name="home" component={HomeScreen} />
-          <Tab.Screen name="konseling" component={KonselingScreen} />
-          <Tab.Screen name="article" component={ArticleScreen} />
-          <Tab.Screen name="profil" component={ProfileScreen} />
+          <Tab.Screen name="Home" component={HomeScreen} />
+          <Tab.Screen name="Konseling" component={KonselingScreen} />
+          <Tab.Screen name="Article" component={ArticleScreen} />
+          <Tab.Screen name="Profil" component={ProfileScreen} />
         </Tab.Navigator>
       </NavigationContainer>
     </>
   );
 };
 
-export default Routes;
+export default UserRoutes;
