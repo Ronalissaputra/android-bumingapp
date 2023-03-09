@@ -3,8 +3,10 @@ import React from 'react';
 
 const KonselingScreen = () => {
   return (
-    <View>
-      <Text>KonselingScreen</Text>
+    <View className="flex min-h-screen w-full items-center justify-center">
+      <View className="">
+        <Text className="text-2xl font-light">Konseling</Text>
+      </View>
     </View>
   );
 };
