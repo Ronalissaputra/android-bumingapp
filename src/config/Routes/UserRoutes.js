@@ -34,8 +34,8 @@ const UserRoutes = () => {
               if (route.name === 'Home') {
                 iconName = focused ? 'ios-home' : 'ios-home-outline';
                 size = focused ? size + 2 : size + 1;
-              } else if (route.name === 'Konseling') {
-                iconName = focused ? 'calendar' : 'calendar-outline';
+              } else if (route.name === 'Pemantauan') {
+                iconName = focused ? 'receipt' : 'receipt-outline';
                 size = focused ? size + 2 : size + 1;
               } else if (route.name === 'Article') {
                 iconName = focused ? 'newspaper-sharp' : 'newspaper-outline';
@@ -48,7 +48,7 @@ const UserRoutes = () => {
             },
           })}>
           <Tab.Screen name="Home" component={HomeScreen} />
-          <Tab.Screen name="Konseling" component={KonselingScreen} />
+          <Tab.Screen name="Pemantauan" component={KonselingScreen} />
           <Tab.Screen name="Article" component={ArticleScreen} />
           <Tab.Screen name="Profil" component={ProfileScreen} />
         </Tab.Navigator>

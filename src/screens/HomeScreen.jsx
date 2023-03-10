@@ -1,64 +1,32 @@
 import React from 'react';
-import {View, Text, ScrollView} from 'react-native';
+import {Header, InformasiKesehatan, Konseling, TitleText} from '../components';
+import {View, ScrollView, TextInput} from 'react-native';
+import Icon from 'react-native-vector-icons/Ionicons';
 
 const HomeScreen = () => {
   return (
     <ScrollView className="h-auto w-full px-2">
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
+      <View className="sticky top-0">
+        <Header />
       </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
+      <View className="flex justify-center">
+        <TextInput
+          className="rounded-full border border-black py-[2px] px-4 text-xl"
+          placeholder="Search"
+        />
+        <View className="absolute right-2">
+          <Icon name="ios-search-outline" size={25} />
+        </View>
       </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
-      <View className="mt-4 h-20 w-full rounded-lg bg-indigo-600">
-        <Text className="p-2 text-2xl font-light text-gray-100">
-          Hello Ronalis
-        </Text>
-      </View>
+      <TitleText>Jadwal Konseling</TitleText>
+      <Konseling />
+      <Konseling />
+      <TitleText>Informasi Kesehatan</TitleText>
+      <InformasiKesehatan />
+      <InformasiKesehatan />
+      <InformasiKesehatan />
+      <InformasiKesehatan />
+      <InformasiKesehatan />
     </ScrollView>
   );
 };
