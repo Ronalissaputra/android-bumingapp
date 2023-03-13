@@ -1,8 +1,13 @@
 import React from 'react';
-import {UserRoutes} from './src/config/Routes';
+import {NavigationContainer} from '@react-navigation/native';
+import AuthNavigation from './src/config/Navigation/AuthNavigation';
 
 const App = () => {
-  return <UserRoutes />;
+  return (
+    <NavigationContainer>
+      <AuthNavigation />
+    </NavigationContainer>
+  );
 };
 
 export default App;

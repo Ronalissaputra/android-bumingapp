@@ -3,7 +3,6 @@ import {Alert, Modal, Text, View, TouchableOpacity} from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const Popup = ({modalVisible, setModalVisible}) => {
-  console.log(modalVisible);
   return (
     <View className="flex justify-end">
       <Modal

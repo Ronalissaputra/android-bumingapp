@@ -1,6 +1,11 @@
 import React from 'react';
-import {Header, InformasiKesehatan, Konseling, TitleText} from '../components';
 import {View, ScrollView, TextInput} from 'react-native';
+import {
+  Header,
+  TitleText,
+  Konseling,
+  InformasiKesehatan,
+} from '../../components';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const HomeScreen = () => {

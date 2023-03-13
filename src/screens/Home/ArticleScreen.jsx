@@ -1,6 +1,6 @@
 import {View, ScrollView, TextInput} from 'react-native';
 import React from 'react';
-import {Header, InformasiKesehatan, TitleText} from '../components';
+import {Header, InformasiKesehatan, TitleText} from '../../components';
 import Icon from 'react-native-vector-icons/Ionicons';
 
 const ArticleScreen = () => {
